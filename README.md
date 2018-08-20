@@ -11,6 +11,7 @@ A lot of the new APIs and methodologies are much easier to understand, and are s
 ---
 
 _[...]_ Please take a moment to consider if you actually need Lodash as a dependency; maybe you can include a few lines of utility code, and forgo the requirement. If you're only targeting more modern browsers, you might not need anything more than what the browser ships with.
+
 _[...]_ Some developers believe that Lodash is protecting us from a great demon of browser incompatibility when, in truth, _[modern]_ browsers are pretty easy to deal with on their own.
 
 ---
