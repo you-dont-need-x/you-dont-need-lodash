@@ -10,12 +10,6 @@ A lot of the new APIs and methodologies are much easier to understand, and are s
 
 ---
 
-_[...]_ Please take a moment to consider if you actually need Lodash as a dependency; maybe you can include a few lines of utility code, and forgo the requirement. If you're only targeting more modern browsers, you might not need anything more than what the browser ships with.
-
-_[...]_ Some developers believe that Lodash is protecting us from a great demon of browser incompatibility when, in truth, _[modern]_ browsers are pretty easy to deal with on their own.
-
----
-
 Most of the APIs that I'll be showing can be [polyfilled](<https://en.wikipedia.org/wiki/Polyfill_(programming)>), meaning that if the browser is modern, and supports the APIs, it will use those, but if the browser is legacy, it will update the APIs with the new features, and allow all browsers to work.
 **Modern features that can be polyfilled for legacy browsers:**
 
