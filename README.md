@@ -39,7 +39,7 @@ _.compact([0, 1, false, 2, "", 3]);
 
 ---
 
-## \_.concat(array,[values])
+## \_.concat(array, [values])
 
 **Lodash**
 
@@ -81,7 +81,7 @@ _.drop([1, 2, 3], 2);
 _.fill([4, 6, 8, 10], "*", 1, 3);
 ```
 
-**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+**Modern** | Using [Array.fill](http://devdocs.io/javascript/global_objects/array/fill)
 
 ```javascript
 [4, 6, 8, 10].fill("*", 1, 3);
