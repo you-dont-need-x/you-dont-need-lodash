@@ -90,3 +90,99 @@ _.fill([4, 6, 8, 10], "*", 1, 3);
 ```
 
 ---
+
+## \_.findIndex(array, [predicate=_.identity], [fromIndex=0])
+
+**Lodash**
+
+```javascript
+const users = [
+	{ user: "barney", active: false },
+	{ user: "fred", active: false },
+	{ user: "pebbles", active: true }
+];
+
+_.findIndex(users, o => o.user == "barney");
+```
+
+**Modern** | Using [Array.findIndex](http://devdocs.io/javascript/global_objects/array/findindex)
+
+```javascript
+const users = [
+	{ user: "barney", active: false },
+	{ user: "fred", active: false },
+	{ user: "pebbles", active: true }
+];
+
+users.findIndex(o => o.user == "barney");
+```
+
+---
+
+## \_.head(array)
+
+**Lodash**
+
+```javascript
+_.head([1, 2, 3]);
+```
+
+**Modern**
+
+```javascript
+[1, 2, 3][0];
+```
+
+---
+
+## \_.flatten(array)
+
+**Lodash**
+
+```javascript
+_.flatten([1, [2, [3, [4]], 5]]);
+```
+
+**New** | Using [Array.flat](http://devdocs.io/javascript/global_objects/array/flat)
+
+```javascript
+[1, [2, [3, [4]], 5]].flat(1);
+```
+
+---
+
+## \_.flattenDeep(array)
+
+**Lodash**
+
+```javascript
+_.flattenDeep([1, [2, [3, [4]], 5]]);
+```
+
+**New** | Using [Array.flat](http://devdocs.io/javascript/global_objects/array/flat)
+
+```javascript
+[1, [2, [3, [4]], 5]].flat(Infinity);
+```
+
+---
+
+## \_.flattenDepth(array, [depth=1])
+
+**Lodash**
+
+```javascript
+const array = [1, [2, [3, [4]], 5]];
+
+_.flattenDepth(array, 1);
+```
+
+**New** | Using [Array.flat](http://devdocs.io/javascript/global_objects/array/flat)
+
+```javascript
+const array = [1, [2, [3, [4]], 5]];
+
+array.flat(1));
+```
+
+---
