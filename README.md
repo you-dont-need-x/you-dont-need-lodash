@@ -39,7 +39,7 @@ _.compact([0, 1, false, 2, "", 3]);
 
 ---
 
-## \_.concat(array,[values])
+## \_.concat(array, [values])
 
 **Lodash**
 
@@ -53,6 +53,38 @@ const other = _.concat(array, 2, [3], [[4]]);
 ```javascript
 const array = [1];
 const other = array.concat(2, [3], [[4]]);
+```
+
+---
+
+## \_.drop(array, [n=1])
+
+**Lodash**
+
+```javascript
+_.drop([1, 2, 3], 2);
+```
+
+**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+
+```javascript
+[1, 2, 3].slice(2);
+```
+
+---
+
+## \_.fill(array, value, [start=0], [end=array.length])
+
+**Lodash**
+
+```javascript
+_.fill([4, 6, 8, 10], "*", 1, 3);
+```
+
+**Modern** | Using [Array.fill](http://devdocs.io/javascript/global_objects/array/fill)
+
+```javascript
+[4, 6, 8, 10].fill("*", 1, 3);
 ```
 
 ---
