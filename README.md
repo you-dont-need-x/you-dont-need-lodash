@@ -22,3 +22,37 @@ Most of the APIs that I'll be showing can be [polyfilled](<https://en.wikipedia.
   Although a couple of the modern examples have more characters in their code, they should not deter you from trying to understand these new APIs. Read carefully, and try to understand what the code is doing so that you can better reflect on whether or not you should use a library.
 
 ---
+
+## \_.compact(array)
+
+**Lodash**
+
+```javascript
+_.compact([0, 1, false, 2, "", 3]);
+```
+
+**Modern** | Using [Array.filter](http://devdocs.io/javascript/global_objects/array/filter) and [Arrow functions](http://devdocs.io/javascript/functions/arrow_functions)
+
+```javascript
+[0, 1, false, 2, "", 3].filter(element => element);
+```
+
+---
+
+## \_.concat(array,[values])
+
+**Lodash**
+
+```javascript
+const array = [1];
+const other = _.concat(array, 2, [3], [[4]]);
+```
+
+**Modern** | Using [Array.concat](http://devdocs.io/javascript/global_objects/array/concat)
+
+```javascript
+const array = [1];
+const other = array.concat(2, [3], [[4]]);
+```
+
+---
