@@ -90,3 +90,47 @@ _.fill([4, 6, 8, 10], "*", 1, 3);
 ```
 
 ---
+
+## \_.findIndex(array, [predicate=_.identity], [fromIndex=0])
+
+**Lodash**
+
+```javascript
+const users = [
+	{ user: "barney", active: false },
+	{ user: "fred", active: false },
+	{ user: "pebbles", active: true }
+];
+
+_.findIndex(users, o => o.user == "barney");
+```
+
+**Modern** | Using [Array.findIndex](http://devdocs.io/javascript/global_objects/array/findindex)
+
+```javascript
+const users = [
+	{ user: "barney", active: false },
+	{ user: "fred", active: false },
+	{ user: "pebbles", active: true }
+];
+
+users.findIndex(o => o.user == "barney");
+```
+
+---
+
+## \_.head(array)
+
+**Lodash**
+
+```javascript
+_.head([1, 2, 3]);
+```
+
+**Modern**
+
+```javascript
+[1, 2, 3][0];
+```
+
+---
