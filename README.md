@@ -38,3 +38,21 @@ _.compact([0, 1, false, 2, "", 3]);
 ```
 
 ---
+
+## \_.concat(array,[values])
+
+**Lodash**
+
+```javascript
+const array = [1];
+const other = _.concat(array, 2, [3], [[4]]);
+```
+
+**Modern** | Using [Array.concat](http://devdocs.io/javascript/global_objects/array/concat)
+
+```javascript
+const array = [1];
+const other = array.concat(2, [3], [[4]]);
+```
+
+---
