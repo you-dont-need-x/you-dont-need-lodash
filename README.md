@@ -56,3 +56,35 @@ const other = array.concat(2, [3], [[4]]);
 ```
 
 ---
+
+## \_.drop(array, [n=1])
+
+**Lodash**
+
+```javascript
+_.drop([1, 2, 3], 2);
+```
+
+**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+
+```javascript
+[1, 2, 3].slice(2);
+```
+
+---
+
+## \_.fill(array, value, [start=0], [end=array.length])
+
+**Lodash**
+
+```javascript
+_.fill([4, 6, 8, 10], "*", 1, 3);
+```
+
+**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+
+```javascript
+[4, 6, 8, 10].fill("*", 1, 3);
+```
+
+---
