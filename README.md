@@ -1,3 +1,5 @@
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+
 # You Don't Need Lodash
 
 "You Don't Need Lodash" is intened to show how modern javascript can replace most of the Lodash library.
