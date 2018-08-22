@@ -319,21 +319,7 @@ _.take([1, 2, 3], 2);
 
 ---
 
-## \## \_.take(array, [n=1])
-
-**Lodash**
-
-```javascript
-_.take([1, 2, 3], 2);
-```
-
-**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
-
-```javascript
-[1, 2, 3].slice(0, 2);
-```
-
----
+## \_.takeRight(array, [n=1])
 
 **Lodash**
 
