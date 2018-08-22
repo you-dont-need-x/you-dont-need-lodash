@@ -266,3 +266,85 @@ _.last([1, 2, 3]);
 ```
 
 ---
+
+## \_.reverse(array)
+
+**Lodash**
+
+```javascript
+const array = [1, 2, 3];
+
+_.reverse(array);
+```
+
+**Modern** | Using [Array.reverse](http://devdocs.io/javascript/global_objects/array/reverse)
+
+```javascript
+const array = [1, 2, 3];
+
+array.reverse();
+```
+
+---
+
+## \_.tail(array)
+
+**Lodash**
+
+```javascript
+_.tail([1, 2, 3]);
+```
+
+**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+
+```javascript
+[1, 2, 3].slice(1);
+```
+
+---
+
+## \_.take(array, [n=1])
+
+**Lodash**
+
+```javascript
+_.take([1, 2, 3], 2);
+```
+
+**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+
+```javascript
+[1, 2, 3].slice(0, 2);
+```
+
+---
+
+## \## \_.take(array, [n=1])
+
+**Lodash**
+
+```javascript
+_.take([1, 2, 3], 2);
+```
+
+**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+
+```javascript
+[1, 2, 3].slice(0, 2);
+```
+
+---
+
+**Lodash**
+
+```javascript
+_.takeRight([1, 2, 3], 2);
+```
+
+**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+
+```javascript
+[1, 2, 3].slice(-2);
+```
+
+---
