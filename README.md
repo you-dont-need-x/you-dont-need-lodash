@@ -202,3 +202,135 @@ Object.fromEntries([["a", 1], ["b", 2]]);
 ```
 
 ---
+
+## \_.indexOf(array, value, [fromIndex=0])
+
+**Lodash**
+
+```javascript
+_.indexOf([1, 2, 1, 2], 2, 2);
+```
+
+**Modern** | Using [Array.indexOf](http://devdocs.io/javascript/global_objects/array/indexof)
+
+```javascript
+[1, 2, 1, 2].indexOf(2, 2);
+```
+
+---
+
+## \_.initial(array)
+
+**Lodash**
+
+```javascript
+_.initial([1, 2, 3]);
+```
+
+**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+
+```javascript
+[1, 2, 3].slice(0, -1);
+```
+
+---
+
+## \_.join(array, [separator=','])
+
+**Lodash**
+
+```javascript
+_.join(["a", "b", "c"], "~");
+```
+
+**Modern** | Using [Array.join](http://devdocs.io/javascript/global_objects/array/join)
+
+```javascript
+["a", "b", "c"].join("~");
+```
+
+---
+
+## \_.last(array)
+
+**Lodash**
+
+```javascript
+_.last([1, 2, 3]);
+```
+
+**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+
+```javascript
+[1, 2, 3].slice(-1)[0];
+```
+
+---
+
+## \_.reverse(array)
+
+**Lodash**
+
+```javascript
+const array = [1, 2, 3];
+
+_.reverse(array);
+```
+
+**Modern** | Using [Array.reverse](http://devdocs.io/javascript/global_objects/array/reverse)
+
+```javascript
+const array = [1, 2, 3];
+
+array.reverse();
+```
+
+---
+
+## \_.tail(array)
+
+**Lodash**
+
+```javascript
+_.tail([1, 2, 3]);
+```
+
+**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+
+```javascript
+[1, 2, 3].slice(1);
+```
+
+---
+
+## \_.take(array, [n=1])
+
+**Lodash**
+
+```javascript
+_.take([1, 2, 3], 2);
+```
+
+**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+
+```javascript
+[1, 2, 3].slice(0, 2);
+```
+
+---
+
+## \_.takeRight(array, [n=1])
+
+**Lodash**
+
+```javascript
+_.takeRight([1, 2, 3], 2);
+```
+
+**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+
+```javascript
+[1, 2, 3].slice(-2);
+```
+
+---
