@@ -186,3 +186,19 @@ array.flat(1));
 ```
 
 ---
+
+## \_.fromPairs(pairs)
+
+**Lodash**
+
+```javascript
+_.fromPairs([["a", 1], ["b", 2]]);
+```
+
+**New** | Using [Object.fromEntries](https://github.com/tc39/proposal-object-from-entries)
+
+```javascript
+Object.fromEntries([["a", 1], ["b", 2]]);
+```
+
+---
