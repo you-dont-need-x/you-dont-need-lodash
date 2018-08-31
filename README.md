@@ -2,7 +2,7 @@
 
 # You Don't Need Lodash
 
-"You Don't Need Lodash" is intened to show how modern javascript can replace most of the Lodash library.
+"You Don't Need Lodash" is intended to show how modern javascript can replace most of the Lodash library.
 
 ### It's 2018; Things Have Changed
 
@@ -33,7 +33,7 @@ Most of the APIs that I'll be showing can be [polyfilled](<https://en.wikipedia.
 _.compact([0, 1, false, 2, "", 3]);
 ```
 
-**Modern** | Using [Array.filter](http://devdocs.io/javascript/global_objects/array/filter) and [Arrow functions](http://devdocs.io/javascript/functions/arrow_functions)
+**Modern** | Using [array.filter](http://devdocs.io/javascript/global_objects/array/filter) and [Arrow functions](http://devdocs.io/javascript/functions/arrow_functions)
 
 ```javascript
 [0, 1, false, 2, "", 3].filter(element => element);
@@ -50,7 +50,7 @@ const array = [1];
 const other = _.concat(array, 2, [3], [[4]]);
 ```
 
-**Modern** | Using [Array.concat](http://devdocs.io/javascript/global_objects/array/concat)
+**Modern** | Using [array.concat](http://devdocs.io/javascript/global_objects/array/concat)
 
 ```javascript
 const array = [1];
@@ -67,7 +67,7 @@ const other = array.concat(2, [3], [[4]]);
 _.drop([1, 2, 3], 2);
 ```
 
-**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+**Modern** | Using [array.slice](http://devdocs.io/javascript/global_objects/array/slice)
 
 ```javascript
 [1, 2, 3].slice(2);
@@ -83,7 +83,7 @@ _.drop([1, 2, 3], 2);
 _.fill([4, 6, 8, 10], "*", 1, 3);
 ```
 
-**Modern** | Using [Array.fill](http://devdocs.io/javascript/global_objects/array/fill)
+**Modern** | Using [array.fill](http://devdocs.io/javascript/global_objects/array/fill)
 
 ```javascript
 [4, 6, 8, 10].fill("*", 1, 3);
@@ -105,7 +105,7 @@ const users = [
 _.findIndex(users, o => o.user == "barney");
 ```
 
-**Modern** | Using [Array.findIndex](http://devdocs.io/javascript/global_objects/array/findindex)
+**Modern** | Using [array.findIndex](http://devdocs.io/javascript/global_objects/array/findindex)
 
 ```javascript
 const users = [
@@ -143,7 +143,7 @@ _.head([1, 2, 3]);
 _.flatten([1, [2, [3, [4]], 5]]);
 ```
 
-**New** | Using [Array.flat](http://devdocs.io/javascript/global_objects/array/flat)
+**New** | Using [array.flat](http://devdocs.io/javascript/global_objects/array/flat)
 
 ```javascript
 [1, [2, [3, [4]], 5]].flat(1);
@@ -159,7 +159,7 @@ _.flatten([1, [2, [3, [4]], 5]]);
 _.flattenDeep([1, [2, [3, [4]], 5]]);
 ```
 
-**New** | Using [Array.flat](http://devdocs.io/javascript/global_objects/array/flat)
+**New** | Using [array.flat](http://devdocs.io/javascript/global_objects/array/flat)
 
 ```javascript
 [1, [2, [3, [4]], 5]].flat(Infinity);
@@ -177,7 +177,7 @@ const array = [1, [2, [3, [4]], 5]];
 _.flattenDepth(array, 1);
 ```
 
-**New** | Using [Array.flat](http://devdocs.io/javascript/global_objects/array/flat)
+**New** | Using [array.flat](http://devdocs.io/javascript/global_objects/array/flat)
 
 ```javascript
 const array = [1, [2, [3, [4]], 5]];
@@ -211,7 +211,7 @@ Object.fromEntries([["a", 1], ["b", 2]]);
 _.indexOf([1, 2, 1, 2], 2, 2);
 ```
 
-**Modern** | Using [Array.indexOf](http://devdocs.io/javascript/global_objects/array/indexof)
+**Modern** | Using [array.indexOf](http://devdocs.io/javascript/global_objects/array/indexof)
 
 ```javascript
 [1, 2, 1, 2].indexOf(2, 2);
@@ -227,7 +227,7 @@ _.indexOf([1, 2, 1, 2], 2, 2);
 _.initial([1, 2, 3]);
 ```
 
-**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+**Modern** | Using [array.slice](http://devdocs.io/javascript/global_objects/array/slice)
 
 ```javascript
 [1, 2, 3].slice(0, -1);
@@ -243,7 +243,7 @@ _.initial([1, 2, 3]);
 _.join(["a", "b", "c"], "~");
 ```
 
-**Modern** | Using [Array.join](http://devdocs.io/javascript/global_objects/array/join)
+**Modern** | Using [array.join](http://devdocs.io/javascript/global_objects/array/join)
 
 ```javascript
 ["a", "b", "c"].join("~");
@@ -259,7 +259,7 @@ _.join(["a", "b", "c"], "~");
 _.last([1, 2, 3]);
 ```
 
-**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+**Modern** | Using [array.slice](http://devdocs.io/javascript/global_objects/array/slice)
 
 ```javascript
 [1, 2, 3].slice(-1)[0];
@@ -277,7 +277,7 @@ const array = [1, 2, 3];
 _.reverse(array);
 ```
 
-**Modern** | Using [Array.reverse](http://devdocs.io/javascript/global_objects/array/reverse)
+**Modern** | Using [array.reverse](http://devdocs.io/javascript/global_objects/array/reverse)
 
 ```javascript
 const array = [1, 2, 3];
@@ -295,7 +295,7 @@ array.reverse();
 _.tail([1, 2, 3]);
 ```
 
-**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+**Modern** | Using [array.slice](http://devdocs.io/javascript/global_objects/array/slice)
 
 ```javascript
 [1, 2, 3].slice(1);
@@ -311,7 +311,7 @@ _.tail([1, 2, 3]);
 _.take([1, 2, 3], 2);
 ```
 
-**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+**Modern** | Using [array.slice](http://devdocs.io/javascript/global_objects/array/slice)
 
 ```javascript
 [1, 2, 3].slice(0, 2);
@@ -327,7 +327,7 @@ _.take([1, 2, 3], 2);
 _.takeRight([1, 2, 3], 2);
 ```
 
-**Modern** | Using [Array.slice](http://devdocs.io/javascript/global_objects/array/slice)
+**Modern** | Using [array.slice](http://devdocs.io/javascript/global_objects/array/slice)
 
 ```javascript
 [1, 2, 3].slice(-2);
